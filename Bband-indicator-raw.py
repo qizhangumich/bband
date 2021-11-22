@@ -42,7 +42,7 @@ period = st.sidebar.selectbox(
      periods) 
 
 start = dt.datetime(year, month, day)
-end = dt.datetime(2021, 11, 15)
+end = dt.datetime(2021, 11, 21)
 
 
 stock = yf.Ticker(ticker)
