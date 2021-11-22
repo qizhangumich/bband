@@ -15,7 +15,7 @@ st.set_page_config(page_title="投资分析-Bband indicator",page_icon="🧊",la
 tickers = ["BEST","RLX","EDU","1810.HK","WDH","CAAS","VZ","DIS","KO","MOMO","PYPL","601919.SS","603171.SS","688179.SS","002001.SZ","CANG"]
 names =["百世","雾芯","新东方","小米","水滴","汽车系统","Verizon","迪士尼","可乐","陌陌","Paypal","中远海控","税友股份","阿拉丁","新和成","灿谷"]
 
-years = [2017,2018,2019,2020,2021]
+years = [2021]
 months = list(range(1,13))
 days = list(range(1,31))
 periods = list(range(10,31))
