@@ -12,8 +12,9 @@ import streamlit as st
 st.set_page_config(page_title="投资分析-Bband indicator",page_icon="🧊",layout="wide")
 
 
-tickers = ["BEST","RLX","EDU","1810.HK","WDH","CAAS","VZ","DIS","KO","MOMO","PYPL"]
-names =["百世","雾芯","新东方","小米","水滴","汽车系统","Verizon","迪士尼","可乐","陌陌","Paypal"]
+tickers = ["BEST","RLX","EDU","1810.HK","WDH","CAAS","VZ","DIS","KO","MOMO","PYPL","601919.SS","603171.SS","688179.SS","002001.SZ"]
+names =["百世","雾芯","新东方","小米","水滴","汽车系统","Verizon","迪士尼","可乐","陌陌","Paypal","中远海控","税友股份","阿拉丁","新和成"]
+
 years = [2017,2018,2019,2020,2021]
 months = list(range(1,13))
 days = list(range(1,31))
@@ -51,7 +52,7 @@ name = names[tickers.index(ticker)]
 
 st.title(name)
 #subheader() 
-st.markdown('** Sector **: ' + info['sector'])
+#st.markdown('** Sector **: ' + info['sector'])
 st.markdown('** Industry **: ' + info['industry'])
 st.markdown('** Phone **: ' + info['phone'])
 #st.markdown('** Address **: ' + info['address1'] + ', ' + info['city'] + ', ' + info['zip'] + ', '  +  info['country'])
