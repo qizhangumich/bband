@@ -58,7 +58,7 @@ st.title(name)
 #st.markdown('** Phone **: ' + info['phone'])
 #st.markdown('** Address **: ' + info['address1'] + ', ' + info['city'] + ', ' + info['zip'] + ', '  +  info['country'])
 #st.markdown('** Website **: ' + info['website'])
-st.markdown('** Revenue(亿) **: ' + income.loc["totalRevenue"][0]/100000000)
+st.markdown('** Revenue **: ' + income.loc["totalRevenue"][0]/100000000)
 st.markdown('** 当黑色线低于绿色线，代表价格过高，是买点；当黑色线高于蓝色线，代表价格过高，是卖点 ** ')
 
 
