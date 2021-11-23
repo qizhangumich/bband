@@ -8,6 +8,7 @@ import yfinance as yf
 import datetime as dt
 import matplotlib.pyplot as plt
 import streamlit as st
+import yahoo_fin.stock_info as si
 
 st.set_page_config(page_title="投资分析-Bband indicator",page_icon="🧊",layout="wide")
 
@@ -49,7 +50,7 @@ stock = yf.Ticker(ticker)
 info = stock.info
 
 name = names[tickers.index(ticker)]
-
+income = si.get_income_statement(ticker)
 st.title(name)
 #subheader() 
 #st.markdown('** Sector **: ' + info['sector'])
@@ -57,6 +58,7 @@ st.title(name)
 #st.markdown('** Phone **: ' + info['phone'])
 #st.markdown('** Address **: ' + info['address1'] + ', ' + info['city'] + ', ' + info['zip'] + ', '  +  info['country'])
 #st.markdown('** Website **: ' + info['website'])
+st.markdown('** Revenue **: ' + income.loc['totalRevenue'])
 st.markdown('** 当黑色线低于绿色线，代表价格过高，是买点；当黑色线高于蓝色线，代表价格过高，是卖点 ** ')
 
 
